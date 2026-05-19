@@ -56,6 +56,17 @@
     <footer>
         <p>&copy; 2025 Sistema de Votação</p>
     </footer>
+<script>
+  window.firebaseConfig = {
+    apiKey: "{{ api_key }}",
+    authDomain: "{{ auth_domain }}",
+    projectId: "{{ project_id }}",
+    storageBucket: "{{ storage_bucket }}",
+    messagingSenderId: "{{ messaging_sender_id }}",
+    appId: "{{ app_id }}"
+  };
+</script>
 <script type="module" src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
